@@ -1,0 +1,31 @@
+# Ui
+window:
+  padding:
+    x: 15
+    y: 15
+
+# Colors
+colors:
+  primary:
+    background: '#1b2024'
+    foreground: '#e2eaeb'
+
+  normal:
+    black: '#1b2024'
+    red: '#90a7ae'
+    green: '#7e97a0'
+    yellow: '#ccdee1'
+    blue: '#a7dbc3'
+    magenta: '#b7ccd1'
+    cyan: '#ccdee1'
+    white: '#e2eaeb'
+
+font:
+  normal:
+    family: curie
+
+  bold:
+    family: curie
+
+  italic:
+    family: curie

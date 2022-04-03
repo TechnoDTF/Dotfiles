@@ -1,0 +1,87 @@
+### Shortcuts
+
+# Alacritty
+super + q
+	alacritty
+
+# Rofi
+super + d
+	rofi -show run
+
+# Librewolf
+super + w
+        librewolf
+
+# PCManFM
+super + e
+        pcmanfm
+
+# Maim
+Print
+    maim -s -u | xclip -selection clipboard -t image/png -i
+
+# Greenclip
+super + a
+        rofi -modi "clipboard:greenclip print" -show clipboard
+
+# Raise Volume
+XF86AudioRaiseVolume
+      pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Lower Volume
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# Mute Volume
+XF86AudioMuteVolume
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Reload sxhkd
+super + shift + x
+	pkill -USR1 -x sxhkd
+
+# Quit & Restart bspwm
+super + alt + {q,r}
+        bspc {quit,wm -r}
+
+# Kill
+super + shift + z
+	bspc node -c
+
+# Fullscreen
+super + f
+	bspc node -t \~fullscreen
+
+# Switch Split
+super + s
+        bspc node @parent -R 90
+
+# Send Newest Marked Node To Preselected
+super + y
+        bspc node newest.marked.local -n newest.!automatic.local
+
+# Swap Current And Biggest Window
+super + g
+        bspc node -s biggest.window
+
+# Focus the node
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Focus Or Send To The Given Desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Resizing
+alt + Left
+    /bin/sh $HOME/.config/bspwm/resize/shrinkx.sh
+
+alt + Right
+    /bin/sh $HOME/.config/bspwm/resize/expandx.sh
+
+alt + Down
+    /bin/sh $HOME/.config/bspwm/resize/shrinky.sh
+
+alt + Up
+    /bin/sh $HOME/.config/bspwm/resize/expandy.sh
+
