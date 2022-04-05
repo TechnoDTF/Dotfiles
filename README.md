@@ -32,6 +32,6 @@ Artix Linux dotfiles
 | Blue                 | `#6a69f7` |
 | Light Blue           | `#5ad0f7` |
 | Yellow               | `#f7f55a` |
-| Orange               | `#ff7a35a` |
+| Orange               | `#f7a35a` |
 | Purple               | `#a95af7` |
 | Pink                 | `#f75ad1` |
