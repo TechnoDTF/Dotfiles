@@ -5,7 +5,7 @@ Artix Linux dotfiles
 ![Desktop2](https://github.com/TechnoDTF/dotfiles/blob/7f63a1e133388eb1722ebd69d6780c4991417e23/Desktop2.png)
 ## Includes
 - alacritty config
-- bspwm config
+- bspwm config [with i3 resizing](https://github.com/zim0369/bspwm_i3size)
 - mpd config
 - ncmpcpp config
 - neofetch config
